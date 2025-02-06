@@ -41,13 +41,15 @@ public class SvgBuilder : ISvgBuilder
     public string Build() =>
         string.Format(SVG_HEADER_TEMPLATE, Width, Height)
             + Buffer
-            + SVG_FOOTER;
+            + SVG_FOOTER
+            ;
 
     public ISvgBuilder AddRectangle(int x, int y, int width, int height, string color)
     {
-        // Replace this line with your code
-        throw new NotImplementedException();
+        Buffer += string.Format(RECT_TEMPLATE, x, y, width, height, color);
+        
 
+     
         // Don't remove this!
         return this;
     }
