@@ -46,7 +46,6 @@ public class SvgBuilder : ISvgBuilder
     public ISvgBuilder AddRectangle(int x, int y, int width, int height, string color)
     {
         // Replace this line with your code
-        // TODO: Do the thing
         throw new NotImplementedException();
 
         // Don't remove this!
