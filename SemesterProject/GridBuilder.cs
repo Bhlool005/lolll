@@ -37,7 +37,14 @@ public class GridBuilder : IGridBuilder
 
     public void Parse(string line)
     {
-        // Replace this line with your code!
-        throw new NotImplementedException();
+        // Example line: "(0, 0) #ff0000"
+          
+        var parts = line.Split(' ');
+
+        var x = int.Parse(parts[0].Trim('(', ','));
+        var y = int.Parse(parts[1].Trim(')'));
+        var color = parts[2];
+
+        SvgBuilder.AddRectangle(x * GridSize, y * GridSize, GridSize, GridSize, color);
     }
 }

@@ -47,8 +47,8 @@ public class SvgBuilder : ISvgBuilder
     public ISvgBuilder AddRectangle(int x, int y, int width, int height, string color)
     {
         Buffer += string.Format(RECT_TEMPLATE, x, y, width, height, color);
-        
-
+                        
+             
      
         // Don't remove this!
         return this;
